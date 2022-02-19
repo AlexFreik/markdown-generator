@@ -29,7 +29,7 @@ function writeToFile(file, content) {
  * @return {string}
  */
 function getReadmeQuestion(key, isVerbose) {
-    let ans = '[Q] ' + questions[key];
+    let ans = EOL + '[Q] ' + questions[key];
     if (!isVerbose || !questionsVerbose[key]) return ans;
     ans += EOL + effects.FgCyan + questionsVerbose[key] + effects.Reset;
     return ans;
