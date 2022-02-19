@@ -42,7 +42,7 @@ function generateMarkdown(data) {
     const isTOC = data.tableOfContent === 'y';
     delete data.tableOfContent;
 
-    const toc = isTOC ? getTOC(generateMarkdownHelper(data, false)) : '';
+    const toc = isTOC ? headers.tableOfContent + EOL + getTOC(generateMarkdownHelper(data, false)) : '';
 
     return title + toc + EOL + EOL + generateMarkdownHelper(data);
 }

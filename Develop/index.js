@@ -56,7 +56,6 @@ function getAnswers(isVerbose) {
 function init() {
     console.log(msgs.helloMsg);
     const answers = getAnswers(process.argv.includes('--verbose'));
-    console.log(answers);
     const output = generateMarkdown(answers);
     console.log(output);
     writeToFile(path.join(__dirname, 'Output_README.md'), output);
