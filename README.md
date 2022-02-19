@@ -15,4 +15,4 @@ Just run the following command and follow instructions in CLI.
 ```zsh
 node index.js --verbose
 ```
-As a result an Output_README.md file will be generated in current folder.
+As a result an `Output_README.md` file will be generated in current folder.
