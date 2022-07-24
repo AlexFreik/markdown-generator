@@ -6,7 +6,7 @@
 ## Installation
 
 ```zsh
-cd Deelop
+cd Develop
 npm install
 ```
 
